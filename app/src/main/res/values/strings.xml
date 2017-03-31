@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">2TINA-Android-Ex06-ListViewMenuActionBarSharedPrefences</string>
+    <string name="preferencias">Preferências</string>
+    <string name="cardapio_pizzas">Cardapio de Pizzas</string>
 </resources>

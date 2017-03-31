@@ -1,5 +1,6 @@
 package br.com.fiap.exercicios.listview.RM77282;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 finish(); //Finalizamos essa activity para o usuário não voltar
             }
         }, 4000);
+
 
     }
 }

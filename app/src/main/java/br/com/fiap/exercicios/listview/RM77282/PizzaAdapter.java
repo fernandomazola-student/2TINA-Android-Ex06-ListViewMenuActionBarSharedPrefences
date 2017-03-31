@@ -46,12 +46,12 @@ public class PizzaAdapter extends BaseAdapter {
         Pizza pizza = this.pizzas.get(position);
         View view = layoutInflater.inflate(R.layout.listview_pizzas, null);
         ImageView imgPizza = (ImageView) view.findViewById(R.id.calabresaqueijo);
+        TextView txtNome = (TextView) view.findViewById(R.id.txtNome);
         TextView txtValor = (TextView) view.findViewById(R.id.txtValor);
-        TextView txtDescricao = (TextView) view.findViewById(R.id.txtDescricao);
 
         imgPizza.setImageResource(pizza.getImagempequena());
-        txtValor.setText(pizza.getNome());
-        txtDescricao.setText(pizza.getIngredientes());
+        txtValor.setText("R$: " + pizza.getValor());
+        txtNome.setText(pizza.getNome());
         return view;
     }
 }

@@ -24,25 +24,33 @@
         <!--android:layout_alignTop="@id/calabresaqueijo"-->
         <!--android:textStyle="bold"/>-->
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtValor"
-        tools:text="R$: 40,00"
-        android:layout_marginTop="10dp"
-        android:textSize="15dp"
         android:layout_toRightOf="@id/calabresaqueijo"
-        android:layout_alignTop="@id/calabresaqueijo"
-        android:textStyle="bold"/>
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtDescricao"
-        tools:text="Por que todo tempo na vida é poucoPor que todo tempo na vida é pouco"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNome"
+            tools:text="Calabresa com Queijo"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/calabresaqueijo"
 
-        android:layout_alignBottom="@id/calabresaqueijo"
-        android:layout_toRightOf="@id/calabresaqueijo"/>
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtValor"
+            tools:text="R$: 40,00"
+            android:layout_toRightOf="@id/calabresaqueijo"/>
+
+
+    </LinearLayout>
 
 
 </RelativeLayout>
