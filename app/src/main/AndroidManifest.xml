@@ -18,7 +18,6 @@
         </activity>
         <activity
             android:name=".PizzaCardapioActivity"
-            android:label="@string/cardapio_pizzas"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".PizzaInfo" android:theme="@style/AppTheme" />

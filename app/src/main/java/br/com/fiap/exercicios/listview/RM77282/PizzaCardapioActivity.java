@@ -1,6 +1,7 @@
 package br.com.fiap.exercicios.listview.RM77282;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -18,6 +19,7 @@ public class PizzaCardapioActivity extends AppCompatActivity {
 
     ListView lstPizzas;
     List<Pizza> pizzas;
+    ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,8 @@ public class PizzaCardapioActivity extends AppCompatActivity {
         PizzaAdapter contatoAdapter = new PizzaAdapter(this, pizzas);
         lstPizzas = (ListView)findViewById(R.id.lstpizzas);
         lstPizzas.setAdapter(contatoAdapter);
-
+        actionBar = getSupportActionBar();
+        actionBar.setTitle(R.string.app_name);
 
         lstPizzas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -50,6 +53,7 @@ public class PizzaCardapioActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
