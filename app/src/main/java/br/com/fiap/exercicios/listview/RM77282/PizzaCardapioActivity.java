@@ -55,8 +55,8 @@ public class PizzaCardapioActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         //VERIFICA QUAL ITEM FOI CLICADO NA ACTIONBAR E REALIZA UMA AÇÃO
         if(item.getItemId() == R.id.preferencias){
-            Intent it = new Intent(this, PreferenciasActivity.class);
-            startActivity(it);
+            Intent iti = new Intent(this, PreferenciasActivity.class);
+            startActivity(iti);
         }
         return super.onOptionsItemSelected(item);
     }

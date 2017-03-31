@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_pizza_info"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="br.com.fiap.exercicios.listview.RM77282.PizzaInfo">
+    android:orientation="vertical"
+    tools:context="br.com.fiap.exercicios.listview.RM77282.PizzaInfo"
+    tools:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar">
 
-</RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pizzacalabresacomqueijo"
+        android:id="@+id/imgPizzainfo"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calabresa com Queijo"
+        android:textSize="30dp"
+        android:id="@+id/txtNomeinfo"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500 g de farinha de trigo, 10 g (1 sachê) de fermento biológico seco, 1 colher (sopa) de açúcar, 1 ovo grande, 55 ml de óleo de soja, 240 ml de água morna (35°), 1 e 1/2 colher (chá) de sal, Carne picadinha ensopada com temperos, Queijo mussarela, Requeijão, Batata palha, Orégano"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:id="@+id/txtIngredientesinfo"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:id="@+id/rating"
+        android:isIndicator="true"
+        android:layout_gravity="center"/>
+</LinearLayout>
