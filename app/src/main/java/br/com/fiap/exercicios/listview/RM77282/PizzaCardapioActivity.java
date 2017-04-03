@@ -42,9 +42,6 @@ public class PizzaCardapioActivity extends AppCompatActivity {
                 startActivity(it);
             }
         });
-
-
-
 }
 
     @Override
@@ -52,15 +49,17 @@ public class PizzaCardapioActivity extends AppCompatActivity {
         //INFLA O MENU COM ITENS DO XML
         getMenuInflater().inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
-    }
 
+
+
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         //VERIFICA QUAL ITEM FOI CLICADO NA ACTIONBAR E REALIZA UMA AÇÃO
-        if(item.getItemId() == R.id.preferencias){
-            Intent iti = new Intent(this, PreferenciasActivity.class);
-            startActivity(iti);
+        if(item.getItemId() == R.id.mnpreferencias){
+            Intent it = new Intent(this, PreferenciasActivity.class);
+            startActivity(it);
         }
         return super.onOptionsItemSelected(item);
     }

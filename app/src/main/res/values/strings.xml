@@ -2,4 +2,8 @@
     <string name="app_name">Cardapio de Pizzas</string>
     <string name="preferencias">Preferências</string>
     <string name="cardapio_pizzas">Cardapio de Pizzas</string>
+    <string name="desativar_splash">Desativar Splash</string>
+    <string name="tempo_splash">Tempo do Splash</string>
+    <string name="exemplo_splash">(em milissegundos, Ex. 1000 = 1s)</string>
+    <string name="salvar">Salvar</string>
 </resources>
